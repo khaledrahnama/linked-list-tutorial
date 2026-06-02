@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   why_struct.c                                       :+:      :+:    :+:   */
+/*   why_typedef.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: krahnama <krahnama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/02 11:14:59 by krahnama          #+#    #+#             */
-/*   Updated: 2026/06/02 13:12:39 by krahnama         ###   ########.fr       */
+/*   Created: 2026/06/02 13:06:33 by krahnama          #+#    #+#             */
+/*   Updated: 2026/06/02 13:07:45 by krahnama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* In this code, we have defined a struct called "employees" 
- which contains several members such as name, family, address, age, and salary. 
- We then create two instances of the struct, e1 and e2, and assign values to their members.
- Finally, we access and print the values of the members for both instances.
-*/
+/*
+we show why to use typedef in C. typedef is a keyword in C that allows us to create new data types or aliases
+ for existing data types.
+ */
 
 #include<stdio.h>
 #include<string.h>
@@ -29,7 +28,7 @@ int main()
     long salary; */
 
     // with a struct 
-    struct employee
+    struct employees 
     {
         char name[50];
         char family[50];
@@ -40,7 +39,7 @@ int main()
 
     //how use struct 
 
-    struct employee e1 = {
+    struct employees e1 = {
         "sam",
         "samfamily ",
         "No 12, Berlin ",
@@ -48,7 +47,7 @@ int main()
         2000
     };
 
-    struct employee e2;
+    struct employees e2;
     
     strcpy(e2.name, "ram");
     strcpy(e2.family, "ramfamily");
