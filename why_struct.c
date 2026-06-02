@@ -6,7 +6,7 @@
 /*   By: krahnama <krahnama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 11:14:59 by krahnama          #+#    #+#             */
-/*   Updated: 2026/06/02 12:40:47 by krahnama         ###   ########.fr       */
+/*   Updated: 2026/06/02 12:50:40 by krahnama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@
 
 int main()
 {
-    // without a struct
-    char name[50];
+    // with arrays
+ /* char name[50];
     char family[50];
     char address[200];
     int age;
-    long salary;
+    long salary; */
 
     // with a struct 
     struct employees 
@@ -58,15 +58,15 @@ int main()
 
       
     //Accessing members : 
-    printf("%s \n", e1.name);
-    printf("%s \n", e1.family);
-    printf("%s \n", e1.address);
-    printf("%d \n", e1.age);
-    printf("%d \n\n\n", e1.salary);
+    printf(" Name: %s \n", e1.name);
+    printf("Family: %s \n", e1.family);
+    printf("Address: %s \n", e1.address);
+    printf("Age: %d \n", e1.age);
+    printf("Salary: %d \n\n\n", e1.salary);
 
-    printf("%s \n", e2.name);
-    printf("%s \n", e2.family);
-    printf("%s \n", e2.address);
-    printf("%d \n", e2.age);
-    printf("%d \n", e2.salary);
+    printf("Name: %s \n", e2.name);
+    printf("Family: %s \n", e2.family);
+    printf("Address: %s \n", e2.address);
+    printf("Age: %d \n", e2.age);
+    printf("Salary: %d \n", e2.salary);
 }
